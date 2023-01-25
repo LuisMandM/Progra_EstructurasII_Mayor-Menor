@@ -78,6 +78,10 @@ public class Main {
                 System.out.println("Error: Opcion fuera de los limites");
                 return;
             }
+            if (amigo_1 == amigo_2) {
+                System.out.println("Error: Mismo amigo");
+                return;
+            }
 
             Amigo amigo_Compare1 = amigos_Added.get(amigo_1);
             Amigo amigo_Compare2 = amigos_Added.get(amigo_2);
